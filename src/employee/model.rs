@@ -51,4 +51,14 @@ impl Employees {
     }
 }
 
-
+impl Employee {
+    fn from(employee: Employee) -> Employee {
+        Employee { 
+             first_name: employee.first_name,
+             last_name: employee.last_name,
+             department: employee.department,
+             salary: employee.salary,
+             age: employee.age,
+        }
+    }
+}
